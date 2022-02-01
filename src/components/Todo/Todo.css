@@ -1,0 +1,21 @@
+input{
+    padding: 8px;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+button{
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+    background-color: aqua;
+}
+li{
+    list-style: none;
+    font-size: 25px ;
+}
