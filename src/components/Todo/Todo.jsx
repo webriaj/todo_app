@@ -16,6 +16,10 @@ const Todo = () => {
             alert("Please enter a todo");
         }
     }
+    const deleteHandler = (todoId) => {
+        const newTodoList = todoList.filter((todo)=> todo.id !== todoId);
+        setTodoList(newTodoList);
+    }
     return (
         <div>
             <div>
@@ -41,12 +45,7 @@ const Todo = () => {
                         <span>{todo.title}</span>
                         <button>Edit</button>
                         <button
-                        onClick = {
-                            () => {
-                            const newTodoList = todoList.filter((item) => item.id !== todo.id);
-                            setTodoList(newTodoList)
-                          }
-                        }>
+                        onClick = {()=>deleteHandler(todo.id)}>
                             Delete
                         </button>
                     </li>
